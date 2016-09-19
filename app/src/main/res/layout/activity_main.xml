@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.wper_smile.control.MainActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextOne"
+        android:text="咖啡"
+        android:textAlignment="center"
+        android:checked="false" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonOne"
+        android:layout_below="@id/editTextOne"
+        android:text="点我改变编辑框内容"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonOne"
+        android:paddingTop="30dp"
+        android:id="@+id/textViewOne"
+        android:textSize="60px"
+        android:textAlignment="center"
+        android:text="已选择的内容" />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/CheckBoxApple"
+        android:layout_below="@id/textViewOne"
+        android:text="苹果"/>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/CheckBoxDog"
+        android:layout_below="@id/CheckBoxApple"
+        android:text="哈士奇"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewTwo"
+        android:layout_below="@id/CheckBoxDog"
+        android:paddingTop="30dp"
+        android:textAlignment="center"
+        android:textSize="60px"
+        android:text="已选择内容"/>
+    <RadioGroup
+        android:id="@+id/RadioGroupSex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/textViewTwo">
+
+        <RadioButton
+            android:id="@+id/radioButtonMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView"
+            android:text="男"
+            />
+        <RadioButton
+            android:id="@+id/radioButtonFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="女"
+            />
+    </RadioGroup>
+</RelativeLayout>
